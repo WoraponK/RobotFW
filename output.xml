@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.0rc2 on win32)" generated="2024-01-29T10:31:56.534830" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterUser" source="D:\65022780\test\RobotFramework-general\TestRobotFramework\RegisterUser.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T10:31:56.642515" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>https://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:31:56.642515" elapsed="5.085140"/>
+</kw>
+<test id="s1-t1" name="Add Products in Cart" line="29">
+<kw name="Click 'Products' button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:32:01.729649" level="INFO">Clicking element 'xpath://*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a'.</msg>
+<arg>xpath://*[@id="header"]/div/div/div/div[2]/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:32:01.729649" elapsed="1.770482"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:32:01.728653" elapsed="1.771478"/>
+</kw>
+<kw name="Hover over first product and click 'Add to cart'">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:32:03.502128" level="INFO">Simulating Mouse Over on element 'xpath:/html/body/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[1]/div[1]'.</msg>
+<arg>xpath:/html/body/section[2]/div[1]/div/div[2]/div[1]/div[2]/div/div[1]/div[1]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:32:03.501131" elapsed="0.282657"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:32:03.783788" level="INFO">Clicking button 'xpath:/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()'.</msg>
+<msg time="2024-01-29T10:32:03.889518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-29T10:32:03.889518" level="FAIL">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65EC92142+3514994]
+	(No symbol) [0x00007FF65E8B0CE2]
+	(No symbol) [0x00007FF65E7576AA]
+	(No symbol) [0x00007FF65E75CFC0]
+	(No symbol) [0x00007FF65E75F38F]
+	(No symbol) [0x00007FF65E75F480]
+	(No symbol) [0x00007FF65E7A1624]
+	(No symbol) [0x00007FF65E7A197C]
+	(No symbol) [0x00007FF65E7E4F17]
+	(No symbol) [0x00007FF65E7C602F]
+	(No symbol) [0x00007FF65E7E28F6]
+	(No symbol) [0x00007FF65E7C5D93]
+	(No symbol) [0x00007FF65E794BDC]
+	(No symbol) [0x00007FF65E795C64]
+	GetHandleVerifier [0x00007FF65ECBE16B+3695259]
+	GetHandleVerifier [0x00007FF65ED16737+4057191]
+	GetHandleVerifier [0x00007FF65ED0E4E3+4023827]
+	GetHandleVerifier [0x00007FF65E9E04F9+689705]
+	(No symbol) [0x00007FF65E8BC048]
+	(No symbol) [0x00007FF65E8B8044]
+	(No symbol) [0x00007FF65E8B81C9]
+	(No symbol) [0x00007FF65E8A88C4]
+	BaseThreadInitThunk [0x00007FFDFAE27034+20]
+	RtlUserThreadStart [0x00007FFDFB7026A1+33]
+</msg>
+<arg>xpath:/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-29T10:32:03.783788" elapsed="0.106727">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65EC92142+3514994]
+	(No symbol) [0x00007FF65E8B0CE2]
+	(No symbol) [0x00007FF65E7576AA]
+	(No symbol) [0x00007FF65E75CFC0]
+	(No symbol) [0x00007FF65E75F38F]
+	(No symbol) [0x00007FF65E75F480]
+	(No symbol) [0x00007FF65E7A1624]
+	(No symbol) [0x00007FF65E7A197C]
+	(No symbol) [0x00007FF65E7E4F17]
+	(No symbol) [0x00007FF65E7C602F]
+	(No symbol) [0x00007FF65E7E28F6]
+	(No symbol) [0x00007FF65E7C5D93]
+	(No symbol) [0x00007FF65E794BDC]
+	(No symbol) [0x00007FF65E795C64]
+	GetHandleVerifier [0x00007FF65ECBE16B+3695259]
+	GetHandleVerifier [0x00007FF65ED16737+4057191]
+	GetHandleVerifier [0x00007FF65ED0E4E3+4023827]
+	GetHandleVerifier [0x00007FF65E9E04F9+689705]
+	(No symbol) [0x00007FF65E8BC048]
+	(No symbol) [0x00007FF65E8B8044]
+	(No symbol) [0x00007FF65E8B81C9]
+	(No symbol) [0x00007FF65E8A88C4]
+	BaseThreadInitThunk [0x00007FFDFAE27034+20]
+	RtlUserThreadStart [0x00007FFDFB7026A1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-01-29T10:32:03.501131" elapsed="0.389384">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65EC92142+3514994]
+	(No symbol) [0x00007FF65E8B0CE2]
+	(No symbol) [0x00007FF65E7576AA]
+	(No symbol) [0x00007FF65E75CFC0]
+	(No symbol) [0x00007FF65E75F38F]
+	(No symbol) [0x00007FF65E75F480]
+	(No symbol) [0x00007FF65E7A1624]
+	(No symbol) [0x00007FF65E7A197C]
+	(No symbol) [0x00007FF65E7E4F17]
+	(No symbol) [0x00007FF65E7C602F]
+	(No symbol) [0x00007FF65E7E28F6]
+	(No symbol) [0x00007FF65E7C5D93]
+	(No symbol) [0x00007FF65E794BDC]
+	(No symbol) [0x00007FF65E795C64]
+	GetHandleVerifier [0x00007FF65ECBE16B+3695259]
+	GetHandleVerifier [0x00007FF65ED16737+4057191]
+	GetHandleVerifier [0x00007FF65ED0E4E3+4023827]
+	GetHandleVerifier [0x00007FF65E9E04F9+689705]
+	(No symbol) [0x00007FF65E8BC048]
+	(No symbol) [0x00007FF65E8B8044]
+	(No symbol) [0x00007FF65E8B81C9]
+	(No symbol) [0x00007FF65E8A88C4]
+	BaseThreadInitThunk [0x00007FFDFAE27034+20]
+	RtlUserThreadStart [0x00007FFDFB7026A1+33]
+</status>
+</kw>
+<kw name="Click 'Continue Shopping' button">
+<status status="NOT RUN" start="2024-01-29T10:32:03.891512" elapsed="0.000000"/>
+</kw>
+<kw name="Hover over second product and click 'Add to cart'">
+<status status="NOT RUN" start="2024-01-29T10:32:03.891512" elapsed="0.000000"/>
+</kw>
+<kw name="Click 'View Cart' button">
+<status status="NOT RUN" start="2024-01-29T10:32:03.891512" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-29T10:32:01.728653" elapsed="2.162859">InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/section[2]/div[1]/div/div[2]/div/div[2]/div/div[1]/div[2]/div/a/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65EC92142+3514994]
+	(No symbol) [0x00007FF65E8B0CE2]
+	(No symbol) [0x00007FF65E7576AA]
+	(No symbol) [0x00007FF65E75CFC0]
+	(No symbol) [0x00007FF65E75F38F]
+	(No symbol) [0x00007FF65E75F480]
+	(No symbol) [0x00007FF65E7A1624]
+	(No symbol) [0x00007FF65E7A197C]
+	(No symbol) [0x00007FF65E7E4F17]
+	(No symbol) [0x00007FF65E7C602F]
+	(No symbol) [0x00007FF65E7E28F6]
+	(No symbol) [0x00007FF65E7C5D93]
+	(No symbol) [0x00007FF65E794BDC]
+	(No symbol) [0x00007FF65E795C64]
+	GetHandleVerifier [0x00007FF65ECBE16B+3695259]
+	GetHandleVerifier [0x00007FF65ED16737+4057191]
+	GetHandleVerifier [0x00007FF65ED0E4E3+4023827]
+	GetHandleVerifier [0x00007FF65E9E04F9+689705]
+	(No symbol) [0x00007FF65E8BC048]
+	(No symbol) [0x00007FF65E8B8044]
+	(No symbol) [0x00007FF65E8B81C9]
+	(No symbol) [0x00007FF65E8A88C4]
+	BaseThreadInitThunk [0x00007FFDFAE27034+20]
+	RtlUserThreadStart [0x00007FFDFB7026A1+33]
+</status>
+</test>
+<status status="FAIL" start="2024-01-29T10:31:56.534830" elapsed="7.360669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RegisterUser">RegisterUser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
